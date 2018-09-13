@@ -4,7 +4,7 @@ import sbt._
 
 object Deps {
 
-  private val curatorVersion = "4.0.1"
+  private val curatorVersion = "2.9.1"
 
   // The plugins that BuildPlugin will provide to builds where it is used
   val plugins: Seq[ModuleID] = Seq(
@@ -15,7 +15,8 @@ object Deps {
   val libraries: Seq[ModuleID] = Seq(
     "org.apache.curator" % "curator-recipes" % curatorVersion,  // APLv2.0
     "org.apache.curator" % "curator-test" % curatorVersion,     // APLv2.0
-    "org.scalastyle" %% "scalastyle" % "1.0.0"                  // APLv2.0
+    "org.scalastyle" %% "scalastyle" % "1.0.0",                  // APLv2.0
+    "org.javassist" % "javassist" % "3.20.0-GA"
   )
 
   type EncodedArtifactID = (String, Boolean)
