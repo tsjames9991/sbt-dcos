@@ -6,7 +6,7 @@ lazy val root = project.in(file("."))
     name := "sbt-dcos",
     version := "0.2.0-SNAPSHOT",
     organization := "com.mesosphere",
-    scalaVersion := "2.10.6",
+    scalaVersion := "2.12.4",
     sbtPlugin := true,
 
     // Reuse the data from the metabuild
