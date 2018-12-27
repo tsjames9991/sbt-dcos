@@ -4,9 +4,9 @@ import com.mesosphere.sbt.BuildPlugin
 lazy val root = project.in(file("."))
   .settings(
     name := "sbt-dcos",
-    version := "0.2.0-SNAPSHOT",
+    version := "0.3.0-SNAPSHOT",
     organization := "com.mesosphere",
-    scalaVersion := "2.12.4",
+    scalaVersion := "2.12.6",
     sbtPlugin := true,
 
     // Reuse the data from the metabuild
